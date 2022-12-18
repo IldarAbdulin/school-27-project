@@ -9,7 +9,7 @@ export const Navigation = () => {
   const items = [
     {
       id: 1,
-      route: '/',
+      route: '',
       head: 'Школа',
     },
     { id: 2, route: 'news', head: 'Новости' },
@@ -67,8 +67,8 @@ export const Navigation = () => {
         </div>
       </div>
       <div className={active ? styles.active : styles.act}>
-        {hoverItems.map((item) => (
-          <div className={styles.activeLinks} key={item.id}>
+        {hoverItems.map((item, index) => (
+          <div className={styles.activeLinks} key={index}>
             <Link to={`/${item.route}`}>{item.link}</Link>
           </div>
         ))}

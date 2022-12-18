@@ -1,0 +1,24 @@
+.timetable {
+  font-weight: 300;
+  h1 {
+    text-align: center;
+    font-size: 29px;
+    color: rgb(61, 61, 61);
+  }
+  p {
+    font-size: 17px;
+  }
+  h3 {
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  &__call_schedule {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr;
+    div {
+      padding: 10px;
+      border: 1px solid rgba(4, 4, 4, 0.203);
+    }
+  }
+}

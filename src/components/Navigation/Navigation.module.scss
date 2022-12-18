@@ -1,16 +1,20 @@
 .navigation {
   background: #fd7e14;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.196);
+  position: sticky;
+  top: -1px;
+  z-index: 5;
   &__items {
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
     height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .navigation__left_site {
       .drop__down {
-        margin-right: 10px;
+        margin-left: 5px;
         cursor: pointer;
       }
       display: flex;
@@ -18,12 +22,14 @@
       gap: 10px;
       a {
         color: #fff;
-        padding: 10px;
       }
       .links {
         transition: 0.3s;
         border: 1px solid rgba(255, 255, 255, 0.078);
         cursor: pointer;
+        color: #fff;
+        padding: 10px;
+
         &:hover {
           background: rgba(49, 49, 49, 0.149);
         }
@@ -57,6 +63,9 @@
   display: flex;
   padding: 20px;
   background: #fd7e14;
+  position: sticky;
+  top: 6vh;
+  z-index: 5;
   .activeLinks {
     margin-left: 40px;
     a {
